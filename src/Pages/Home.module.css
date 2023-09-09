@@ -1,0 +1,209 @@
+.navigation{
+    background-color: white;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    z-index: 100;/* Background color of the navbar */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow properties */
+}
+
+.navigation ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+/* .navigation .logo img{
+    width: 20%;
+    height: 50px;
+    cursor: pointer;
+    margin: 7px 0;
+    align-self: flex-start;
+} */
+
+.navigation ul li{
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.navigation ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 17px;
+}
+.container ul li a i{
+    color: white;
+}
+
+.navigation ul li a::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: orange;
+    display: block;
+    transition: 0.2s linear;
+}
+
+.navigation ul li a:hover::after{
+    width: 100%;
+  }
+
+  .navigation ul li a:hover{
+    color: rgb(206, 139, 16);
+  }
+
+.container{
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+    z-index: 99;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container .maniContentBar{
+    height: auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr;
+    grid-template-areas: "left right";
+}
+
+@media screen and (max-width: 767px) {
+    .container .maniContentBar {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+.container .maniContentBar .maniContentSub{
+    grid-area: left;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.container .maniContentBar .maniContentSub h1{
+    font-size: 60px;
+}
+
+.container .maniContentBar .maniContentSub h1 span{
+    color: orange;
+    font-family: mv boli;
+}
+
+.container .maniContentBar .maniContentSub p{
+    text-align: justify;
+    margin-left: 160px;
+    line-height: 22px;
+}
+
+@media screen and (max-width: 767px) {
+    .container .maniContentBar .maniContentSub p {
+      margin-left: 30px;
+    }
+  }
+
+.container .maniContentBar .mainImage{
+    grid-area: right;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    overflow: hidden;
+}
+
+.container .maniContentBar .mainImage img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.container .subcontainer{
+    width: 300px;
+    height: auto;
+    margin-top: 200px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 200px;
+    border-radius: 12px;
+    cursor: pointer;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* .container .subcontainer:hover{
+    transform: scale(0.9);
+    border: 3px solid white;
+    border-color: aqua;
+} */
+
+.container .subcontainer .imageContainer{
+    width: 280px;
+    height: 200px;
+    margin: 5px;
+    overflow: hidden;
+}
+
+.container .subcontainer .imageContainer img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: 1s;
+}
+
+.container .subcontainer .imageContainer img:hover{
+    transform: scale(1.2);
+}
+
+.container .subcontainer .infoContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container .subcontainer .infoContainer h1{
+    text-align: justify;
+    position: relative;
+    color: rgb(224, 149, 8);
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.container .subcontainer .infoContainer p{
+    text-align: justify;
+    position: relative;
+    margin: 5px;
+    list-style: 22px;
+}
+
+.container .subcontainer .infoContainer .imageIcons{
+    display: flex;
+    flex-direction: row;
+    color: orange;
+}
+
+.container .subcontainer a{
+    text-align: center;
+    text-decoration: none;
+    background-color: orange;
+    padding: 10px;
+    cursor: pointer;
+    margin-bottom: 44px;
+    margin-top: 10px;
+}
