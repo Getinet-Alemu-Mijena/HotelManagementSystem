@@ -1,0 +1,141 @@
+.navigation {
+  background-color: white;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+  z-index: 100;
+  /* Background color of the navbar */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  /* Box shadow properties */
+}
+
+.navigation ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+/* .navigation .logo img{
+    width: 20%;
+    height: 50px;
+    cursor: pointer;
+    margin: 7px 0;
+    align-self: flex-start;
+} */
+
+.navigation ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.navigation ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.container ul li a i {
+  color: white;
+}
+
+.navigation ul li a::after {
+  content: '';
+  width: 0;
+  height: 2px;
+  background: orange;
+  display: block;
+  transition: 0.2s linear;
+}
+
+.navigation ul li a:hover::after {
+  width: 100%;
+}
+
+.navigation ul li a:hover {
+  color: rgb(206, 139, 16);
+}
+
+.container {
+  width: 100%;
+  height: auto;
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 25% 75%;
+  grid-template-rows: 100vh;
+  grid-template-areas: "left  right";
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    display: block;
+  }
+}
+
+.container .left {
+  grid-area: left;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.container .left .AboutUsImage{
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  margin: 70px;
+}
+
+.container .left .AboutUsImage img{
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.container .left .AboutUsImage img:hover{
+  transform: scaleY(1.2);
+}
+
+.container .right {
+  grid-area: right;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.container .right h1 {
+  font-size: 47px;
+}
+
+.container .right h1 span {
+  color: orange;
+  font-family: mv boli;
+}
+
+.container .right p {
+  text-align: justify;
+  margin: 20px;
+  line-height: 22px;
+  font-family: 'Times New Roman', Times, serif;
+  color: black;
+}
+
+.container .right a{
+  align-self: flex-start;
+  padding-top: 20px;
+  color: white;
+  background-color: blue;
+  margin: 20px;
+  text-decoration: none;
+  font-family: 'Times New Roman', Times, serif;
+  border-radius: 12px;
+  padding: 20px;
+}

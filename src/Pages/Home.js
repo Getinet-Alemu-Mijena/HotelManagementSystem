@@ -48,14 +48,14 @@ const Home = () => {
                     </div>
 
                     <div className={styles.mainImage}>
-                        <img  src={process.env.PUBLIC_URL + "/Images/download.jpeg"}  alt="Your Image" />
+                        <img  src={process.env.PUBLIC_URL + "/Images/download.jpeg"}  alt="" />
                     </div>
                 </div>
 
 
                 <div className={styles.subcontainer}>
                     <div className={styles.imageContainer}>
-                        <img  src={process.env.PUBLIC_URL + "/Images/pasta.jpeg"} alt="My Image"/>
+                        <img  src={process.env.PUBLIC_URL + "/Images/pasta.jpeg"} alt=""/>
                     </div>
                     <div className={styles.infoContainer}>
                      <h1>Pasta</h1>
@@ -79,7 +79,7 @@ const Home = () => {
 
                 <div className={styles.subcontainer}>
                     <div className={styles.imageContainer}>
-                        <img  src={process.env.PUBLIC_URL + "/Images/images (2).jpeg"} alt="My Image"/>
+                        <img  src={process.env.PUBLIC_URL + "/Images/images (2).jpeg"} alt=""/>
                     </div>
                     <div className={styles.infoContainer}>
                      <h1>Pasta</h1>
@@ -102,7 +102,7 @@ const Home = () => {
                 </div>
                 <div className={styles.subcontainer}>
                     <div className={styles.imageContainer}>
-                        <img  src={process.env.PUBLIC_URL + "/images/images (3).jpeg"} alt="My Image"/>
+                        <img  src={process.env.PUBLIC_URL + "/images/images (3).jpeg"} alt=""/>
                     </div>
                     <div className={styles.infoContainer}>
                      <h1>Pasta</h1>
@@ -125,7 +125,7 @@ const Home = () => {
                 </div>
                 <div className={styles.subcontainer}>
                     <div className={styles.imageContainer}>
-                        <img  src={process.env.PUBLIC_URL + "/images/images (1).jpeg"} alt="My Image"/>
+                        <img  src={process.env.PUBLIC_URL + "/images/images (1).jpeg"} alt=""/>
                     </div>
                     <div className={styles.infoContainer}>
                      <h1>Pasta</h1>
@@ -148,7 +148,7 @@ const Home = () => {
                 </div>
                 <div className={styles.subcontainer}>
                     <div className={styles.imageContainer}>
-                        <img  src={process.env.PUBLIC_URL + "/images/images (4).jpeg"} alt="My Image"/>
+                        <img  src={process.env.PUBLIC_URL + "/images/images (4).jpeg"} alt=""/>
                     </div>
                     <div className={styles.infoContainer}>
                      <h1>Pasta</h1>
@@ -171,7 +171,7 @@ const Home = () => {
                 </div>
                 <div className={styles.subcontainer}>
                     <div className={styles.imageContainer}>
-                        <img  src={process.env.PUBLIC_URL + "/images/images.jpeg"} alt="My Image"/>
+                        <img  src={process.env.PUBLIC_URL + "/images/images.jpeg"} alt=""/>
                     </div>
                     <div className={styles.infoContainer}>
                      <h1>Pasta</h1>
@@ -194,7 +194,7 @@ const Home = () => {
                 </div>
                 <div className={styles.subcontainer}>
                     <div className={styles.imageContainer}>
-                        <img  src={process.env.PUBLIC_URL + "/images/pasta.jpeg"} alt="My Image"/>
+                        <img  src={process.env.PUBLIC_URL + "/images/pasta.jpeg"} alt=""/>
                     </div>
                     <div className={styles.infoContainer}>
                      <h1>Pasta</h1>
@@ -217,7 +217,7 @@ const Home = () => {
                 </div>
                 <div className={styles.subcontainer}>
                     <div className={styles.imageContainer}>
-                        <img  src={process.env.PUBLIC_URL + "/images/images.jpeg"} alt="My Image"/>
+                        <img  src={process.env.PUBLIC_URL + "/images/images.jpeg"} alt=""/>
                     </div>
                     <div className={styles.infoContainer}>
                      <h1>Pasta</h1>
