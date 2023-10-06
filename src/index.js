@@ -7,6 +7,9 @@ import Home from './Pages/Home';
 import ContactUs from './Pages/ContactUs';
 import AboutUs from './Pages/AboutUs';
 import Registration from './Pages/Registration';
+import Toolbar from './Pages/Toolbar';
+import Guest from './Pages/hotelguest/Guest';
+import HotelDetail from './Pages/HotelDetail';
 
 import {
   createBrowserRouter,
@@ -34,6 +37,18 @@ const router = createBrowserRouter([
   {
     path: "/registration",
     element: <Registration />,
+  },
+  {
+    path: "/toolbar",
+    element: <Toolbar />,
+  },
+  {
+    path: "/guest",
+    element: <Guest />,
+  },
+  {
+    path: "/hotelDetail",
+    element: <HotelDetail />,
   },
 ]);
 

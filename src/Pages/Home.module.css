@@ -1,46 +1,35 @@
-.navigation{
-    background-color: white;
-    position: fixed;
-    top: 0%;
-    left: 0%;
-    right: 0%;
-    z-index: 100;/* Background color of the navbar */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow properties */
-}
-
-.navigation ul{
+nav {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav .navbarlinks   {
+    display: flex;
     align-items: center;
+    justify-content: center;
+}
+
+nav .navbarlinks   li {
     list-style: none;
+    padding: 0px 20px;
+    position: relative;
 }
 
-/* .navigation .logo img{
-    width: 20%;
-    height: 50px;
-    cursor: pointer;
-    margin: 7px 0;
-    align-self: flex-start;
-} */
-
-.navigation ul li{
-    display: inline-block;
-    margin: 0 15px;
-}
-
-.navigation ul li a{
+nav .navbarlinks   li a {
+    color: #080808;
     text-decoration: none;
-    color: black;
-    font-weight: 500;
-    font-size: 17px;
-}
-.container ul li a i{
-    color: white;
 }
 
-.navigation ul li a::after{
+nav .navbarlinks   li a::after {
     content: '';
     width: 0;
     height: 2px;
@@ -49,18 +38,62 @@
     transition: 0.2s linear;
 }
 
-.navigation ul li a:hover::after{
+nav .navbarlinks   li a:hover::after {
     width: 100%;
-  }
+}
 
-  .navigation ul li a:hover{
+nav .navbarlinks   li a:hover {
     color: rgb(206, 139, 16);
-  }
+}
+
+nav .mobile {
+    display: none;
+}
+
+nav .mobile i {
+    color: rgb(192, 15, 220);
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+    nav .navbarlinks {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 70px;
+        right: -300px;
+        width: 300px;
+        height: 100vh;
+        background-color: white;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.3);
+        padding: 40px 0 0 10px;
+    }
+
+    nav .navbarlinks.activate{
+        right: 0px;
+    }
+    nav .navbarlinks li {
+        margin-bottom: 20px;
+    }
+
+    nav .mobile {
+        display: block;
+    }
+
+    nav .mobile i {
+        font-size: 24px;
+        cursor: pointer;
+    }
+}
 
 .container{
     width: 100%;
     height: auto;
-    margin-top: 50px;
+    margin-top: 60px;
     z-index: 99;
     display: flex;
     flex-direction: row;

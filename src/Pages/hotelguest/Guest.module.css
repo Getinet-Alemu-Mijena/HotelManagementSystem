@@ -1,0 +1,280 @@
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px 80px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav .navbarlinks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav .navbarlinks li {
+    list-style: none;
+    padding: 0px 20px;
+    position: relative;
+}
+
+nav .navbarlinks li a {
+    color: #080808;
+    text-decoration: none;
+}
+
+nav .navbarlinks li a::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: orange;
+    display: block;
+    transition: 0.2s linear;
+}
+
+nav .navbarlinks li a:hover::after {
+    width: 100%;
+}
+
+nav .navbarlinks li a:hover {
+    color: rgb(206, 139, 16);
+}
+
+nav .mobile {
+    display: none;
+}
+
+nav .mobile i {
+    color: rgb(192, 15, 220);
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+    nav .navbarlinks {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 70px;
+        right: -300px;
+        width: 300px;
+        height: 100vh;
+        background-color: white;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.2);
+        padding: 40px 0 0 10px;
+    }
+
+    nav .navbarlinks.activate {
+        right: 0px;
+    }
+
+    nav .navbarlinks li {
+        margin-bottom: 20px;
+    }
+
+    nav .mobile {
+        display: block;
+    }
+
+    nav .mobile i {
+        font-size: 24px;
+        cursor: pointer;
+    }
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr;
+    grid-template-areas: "mainContainer";
+    z-index: 99;
+    margin-top: 60px;
+}
+
+.container .mainContainer {
+    grid-area: mainContainer;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container .mainContainer .hotelContainer {
+    width: 250px;
+    height: auto;
+    margin: 30px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+    transition: filter 1s;
+    background-color: white;
+    margin-bottom: 180px;
+}
+
+.container .mainContainer .hotelContainer:hover {
+    filter: brightness(1.2);
+}
+
+@media screen and (max-width: 768px) {
+    .container .mainContainer .hotelContainer {
+        width: 180px;
+        height: 300px;
+    }
+}
+
+.container .mainContainer .hotelContainer .hotelsImageContainer {
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 767px) {
+    .container .mainContainer .hotelContainer .hotelsImageContainer {
+        width: 170px;
+        height: 170px;
+    }
+}
+
+.container .mainContainer .hotelContainer .hotelsImageContainer img {
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.container .mainContainer .hotelContainer .hotelsImageContainer img:hover {
+    transform: scale(1.2);
+}
+
+@media screen and (max-width: 767px) {
+    .container .mainContainer .hotelContainer .hotelsImageContainer img {
+        width: 170px;
+        height: 170px;
+    }
+}
+
+.container .mainContainer .hotelContainer .hotelsPropertyContainer {
+    width: 230px;
+    height: 220px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+
+@media screen and (max-width: 767px) {
+    .container .mainContainer .hotelContainer .hotelsPropertyContainer {
+        width: 150px;
+        height: 150px;
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+}
+
+
+.container .mainContainer .hotelContainer .hotelsPropertyContainer h2 {
+    text-align: justify;
+    position: relative;
+    font-size: large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(29, 42, 3);
+}
+
+.container .mainContainer .hotelContainer .hotelsPropertyContainer i {
+    color: orange;
+    text-align: justify;
+    position: relative;
+}
+
+.container .mainContainer .hotelContainer .hotelsPropertyContainer label {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: justify;
+    position: relative;
+}
+
+.container .mainContainer .hotelContainer .hotelsPropertyContainer p {
+    text-align: justify;
+    position: relative;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.container .mainContainer .hotelContainer .hotelsPropertyContainer .actionBtn{
+    width: 10;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.container .mainContainer .hotelContainer .hotelsPropertyContainer .actionBtn button{
+    padding: 10px;
+    background-color: rgb(9, 160, 160);
+    border: none;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    color: wheat;
+    font-size: large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 2px;
+}
+
+@media screen and (max-width: 767px){
+    .container .mainContainer .hotelContainer .hotelsPropertyContainer .actionBtn button{
+        padding: 3px;
+    }    
+}
+
+.container .mainContainer .hotelContainer .hotelsPropertyContainer .actionBtn .saveBTN{
+    background-color: green;
+}
+
+.container .footer{
+    width: 100%;
+    height: 200px;
+    position: relative;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    z-index: 100;
+    background-color: #13294e;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.container .footer .subFooter{
+    width: 250px;
+    height: 95%; 
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    color: white;
+}
+
+.container .footer .subFooter i{
+    padding: 5px;
+}
+
+.container .footer .subFooter a{
+  text-decoration: none;
+  color: white;
+}
