@@ -96,11 +96,82 @@ const HotelDetail = () => {
 
           <div className={styles.hotelLocation}>
             <h2>Location</h2>
-            <p>I will add here</p>
+            <p>I will add here</p>   
           </div>
 
           <div className={styles.searchDetail}>
-             <p>hdjdjd</p>
+             <h2>Your Search Details!</h2>
+             <form>
+              <div className={styles.formGroup}>
+                <label>Place/Sub-City</label>
+                <input/>
+              </div>
+              <div className={styles.formGroup}>
+                <label>Check In</label>
+                <input type='date'/>
+              </div>
+              <div className={styles.formGroup}>
+                <label>Check Out</label>
+                <input type='date'/>
+              </div>
+              <div className={styles.formGroup}>
+                <label>Rooms</label>
+                <select>
+                <option>option</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>6</option>
+                  <option>7</option>
+                  <option>8</option>
+                  <option>9</option>
+                  <option>10</option>
+                  <option>11</option>
+                  <option>12</option>
+                </select>
+              </div>
+              <div className={styles.formGroup}>
+                <label>Adult(18+)</label>
+                <select>
+                <option>option</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>6</option>
+                  <option>7</option>
+                  <option>8</option>
+                  <option>9</option>
+                  <option>10</option>
+                  <option>11</option>
+                  <option>12</option>
+                </select>
+              </div>
+              <div className={styles.formGroup}>
+                <label>Children(1-17</label>
+                <select>
+                <option>option</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>6</option>
+                  <option>7</option>
+                  <option>8</option>
+                  <option>9</option>
+                  <option>10</option>
+                  <option>11</option>
+                  <option>12</option>
+                </select>
+              </div>
+              <div className={styles.formGroup}>
+                <button>Search</button>
+              </div>
+             </form>
           </div>
         </div>
         <div className={styles.rightContainer}>
@@ -286,6 +357,35 @@ const HotelDetail = () => {
           </div>
         </div>
       </div>
+      <div className={styles.footer}>
+                    <div className={styles.subFooter}>
+                        <p>Contact Information</p>
+                        <i className="fa fa-phone">+251919949378</i>
+                        <i className="fa fa-phone">+251919949378</i>
+                        <i className="fa fa-phone">+251919949378</i>
+                        <i className="fa fa-phone">+251919949378</i>
+                    </div>
+                    <div className={styles.subFooter}>
+                        <p>Language Selector</p>
+                        <Link>Afaan Oromo</Link>
+                        <Link>English</Link>
+                        <Link>Amaharic</Link>
+                    </div>
+                    <div className={styles.subFooter}>
+                        <p>Social Media</p>
+                        <Link><i className="fab fa-telegram">Telegram</i></Link>
+                        <Link><i className="fab fa-facebook">Face Book</i></Link>
+                        <Link><i className="fab fa-twitter">Twitter</i></Link>
+                        <Link><i className="fab fa-tiktok">TikTok</i></Link>
+                    </div>
+                    <div className={styles.subFooter}>
+                        <p>Quick Links</p>
+                        <Link to="/"><i className='fa fa-home'></i>Home</Link>
+                        <Link to="/about"><i className='fa fa-info-circle'></i>About Us</Link>
+                        <Link to="/contact"><i className='fa fa-envelope'></i>Contact Us</Link>
+                        <Link to="/guest"><i className='fa fa-user'></i>Guest</Link>
+                    </div>
+                </div>
     </div>
   );
 }

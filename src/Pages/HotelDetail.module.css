@@ -207,6 +207,43 @@ nav .mobile i {
     justify-content: center;
 }
 
+
+.container .leftContainer .searchDetail{
+    width: 250px;
+    height: auto;
+    margin-top: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.container .leftContainer .searchDetail h2{
+    font-size: 16px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    color: rgb(44, 40, 40);
+    padding: 20px;
+}
+
+.container .leftContainer .searchDetail form {
+    width: 220px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container .leftContainer .searchDetail form .formGroup {
+    margin: 10px;
+}
+
+.container .leftContainer .searchDetail form .formGroup label{
+    display: block;
+}
+
 .container .rightContainer {
     height: auto;
     grid-area: right;
@@ -538,4 +575,39 @@ nav .mobile i {
 
 .container .rightContainer .hotelPolices ul li{
     padding: 10px;
+}
+
+ .footer{
+    width: 100%;
+    height: 200px;
+    position: relative;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    z-index: 100;
+    background-color: #13294e;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+ .footer .subFooter{
+    width: 250px;
+    height: 95%; 
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    color: white;
+}
+
+.footer .subFooter i{
+    padding: 5px;
+}
+
+ .footer .subFooter a{
+  text-decoration: none;
+  color: white;
 }
